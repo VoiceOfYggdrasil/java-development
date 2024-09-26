@@ -19,6 +19,7 @@ public class MathApp {
 
         double radius = 7.25;
         double area = radius * radius * Math.PI;
+        //or Math.pow(radius, 2) * Math.PI;
 
         System.out.println("The area of the circle is " + area);
 
