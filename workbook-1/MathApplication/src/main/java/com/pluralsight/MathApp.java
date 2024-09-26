@@ -29,8 +29,8 @@ public class MathApp {
         System.out.println("The square root is " + squareRoot);
 
         int x1 = 5;
-        int x2 = 10;
-        int y1 = 85;
+        int x2 = 85;
+        int y1 = 10;
         int y2 = 50;
         double distance = Math.sqrt(Math.pow(x2 - x1,2)+ Math.pow(y2-y1,2));
 
