@@ -10,18 +10,29 @@ public class FullNameApplication {
         System.out.println("Please enter your name");
 
         System.out.print("First name: ");
-        String firstName = scanner.nextLine();
+        String firstName = scanner.nextLine().trim();
 
         System.out.print("Middle name: ");
-        String middleName = scanner.nextLine();
+        String middleName = scanner.nextLine().trim();
 
         System.out.print("Last name: ");
-        String lastName = scanner.nextLine();
+        String lastName = scanner.nextLine().trim();
 
         System.out.print("Suffix: ");
-        String suffix = scanner.nextLine();
+        String suffix = scanner.nextLine().trim();
 
-        System.out.print("Full name: " + firstName.trim() + " " +
-                middleName.trim() + " " + lastName.trim() + " " + suffix.trim());
+        String fullName = firstName;
+
+        if (!middleName.isEmpty()) {
+            fullName += " " + middleName.charAt(0) + ".";
+        }
+
+        fullName += " " + lastName;
+
+        if (!suffix.isEmpty()) {
+            fullName += ", " + suffix;
+        }
+
+        System.out.println("\nFull Name: " + fullName);
     }
 }
