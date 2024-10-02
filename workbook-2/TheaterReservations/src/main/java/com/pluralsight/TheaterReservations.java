@@ -29,12 +29,12 @@ public class TheaterReservations {
         String ticketMessage = "";
 
         if (ticketNum < 2) {
-            ticketMessage = "ticket ";
+            ticketMessage = " ticket ";
         } else {
-            ticketMessage = "tickets ";
+            ticketMessage = " tickets ";
         }
 
-        System.out.print(ticketNum + " " + ticketMessage + "reserved for " +
+        System.out.print(ticketNum  + ticketMessage + "reserved for " +
                 eventDate + " under " + lastName + ", " + firstName);
 
     }
