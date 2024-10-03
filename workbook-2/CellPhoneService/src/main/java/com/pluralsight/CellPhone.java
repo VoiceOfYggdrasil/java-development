@@ -7,6 +7,7 @@ public class CellPhone {
     private String carrier;
     private String phoneNumber;
     private String owner;
+    private String dial;
 
     public CellPhone() {
         serialNumber = 0;
@@ -14,7 +15,9 @@ public class CellPhone {
         carrier = "";
         phoneNumber = "";
         owner = "";
+        dial = "";
     }
+
 
     public int getSerialNumber() {
         return serialNumber;
@@ -54,5 +57,14 @@ public class CellPhone {
 
     public void setOwner(String owner) {
         this.owner = owner;
+    }
+
+    public String getDial() {
+        return dial;
+    }
+
+    public void dial(String number) {
+        System.out.println("\n" + owner + "'s phone is calling " + phoneNumber);
+
     }
 }
