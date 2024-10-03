@@ -7,6 +7,7 @@ public class CellPhoneApplication {
         Scanner scanner = new Scanner(System.in);
         CellPhone cellPhone1 = new CellPhone();
         CellPhone cellPhone2 = new CellPhone();
+        CellPhone cellPhone3 = new CellPhone();
 
         System.out.println("\nEnter info for first phone: ");
 
@@ -78,6 +79,10 @@ public class CellPhoneApplication {
 
         cellPhone1.dial(cellPhone2.getPhoneNumber());
         cellPhone2.dial(cellPhone1.getPhoneNumber());
+
+        cellPhone3.phoneOverload(123123123, "Smasnug", "AT&T",
+                "4125801077", "Aaron");
+        display(cellPhone3);
 
         //System.out.println("\n" + cellPhone1.getOwner()
         //        + "'s phone is calling " + cellPhone1.getDial());

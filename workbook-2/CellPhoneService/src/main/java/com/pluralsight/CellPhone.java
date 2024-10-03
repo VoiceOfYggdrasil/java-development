@@ -65,6 +65,14 @@ public class CellPhone {
 
     public void dial(String number) {
         System.out.println("\n" + owner + "'s phone is calling " + phoneNumber);
+    }
 
+    public void phoneOverload(int serialNumber, String model, String carrier,
+                            String phoneNumber, String owner) {
+        this.serialNumber = serialNumber;
+        this.model = model;
+        this.carrier = carrier;
+        this.phoneNumber = phoneNumber;
+        this.owner = owner;
     }
 }
