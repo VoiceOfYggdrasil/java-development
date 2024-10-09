@@ -1,13 +1,15 @@
 package com.pluralsight;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 public class Store {
 
     public static void main(String[] args) {
 
         ArrayList<Product> inventory = getInventory();
+
+        Collections.sort(inventory, Comparator.comparing(Product::getName));
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("We carry the following inventory: ");
 
@@ -26,6 +28,7 @@ public class Store {
         inventory.add(new Product(33023, "Lenovo Ideapad", 800.00));
         inventory.add(new Product(92164, "Samsung S22", 1000.00));
         inventory.add(new Product(50038, "Sennheiser HD590", 250.00));
+
 
         return inventory;
     }
