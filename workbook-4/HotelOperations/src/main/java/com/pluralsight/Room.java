@@ -13,6 +13,22 @@ public class Room {
         this.isDirty = false;
     }
 
+    public boolean checkIn() {
+        return isDirty && isOccupied;
+    }
+
+    public boolean checkOut() {
+        if (!isOccupied){
+            return cleanRoom();
+        } else {
+            return false;
+        }
+    }
+
+    public boolean cleanRoom() {
+        return !isDirty;
+    }
+
     public int getNumOfBeds() {
         return numOfBeds;
     }

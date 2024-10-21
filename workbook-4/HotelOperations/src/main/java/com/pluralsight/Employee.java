@@ -78,4 +78,13 @@ public class Employee {
             return 0;
         }
     }
+
+    public double punchIn(double time) {
+        this.hoursWorked = 0;
+        return time;
+    }
+
+    public double punchOut(double time) {
+        return time + hoursWorked;
+    }
 }
