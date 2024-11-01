@@ -13,7 +13,7 @@ public class FamousQuotes {
         quotes[2] = "Unconditional. Inseparable.";
         quotes[3] = "I am not the villain of this story. I do what I do because there is no choice.";
         quotes[4] = "Protocol 3: Protect The Pilot.";
-        quotes[5] = "";
+        quotes[5] = "The line between light and dark is so very thin. Do you know which side you stand on?";
 
     }
 }
